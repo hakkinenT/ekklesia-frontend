@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+main {
+  margin: 80px 0;
+}
+
+.main-container {
+  margin: auto;
+  width: 90%;
+  max-width: 980px;
+  display: flex;
+}
+
+main .texts h1 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6.7rem;
+}
+
+main .texts p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color: #625353;
+  margin: 10px 0 0;
+}
+
+.main-container img {
+  margin-top: -60px;
+  width: 60%;
+  height: 60%;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #1b5e19;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 250ms ease 0s;
+}
+
+.button:hover {
+  background-color: rgba(27, 94, 25, 0.6);
+}
+
+.button-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-button {
+  margin: 15px 0 0;
+}
+
+main .texts .btn-register {
+  margin: 15px 0 0;
+}
+
+@media (max-width: 930px) {
+  .main-container img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 676px) {
+  .menu-section.on nav ul li .button {
+    line-height: 2rem;
+  }
+}

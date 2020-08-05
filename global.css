@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* a cada 1rem será considerado 10px*/
+  font-size: 62.5%;
+}
+
+html,
+body {
+  background-color: #f5f5f5;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header img {
+  width: 190px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header nav ul li .menu-item {
+  font-weight: 500;
+  text-decoration: none;
+  color: #bf360c;
+  padding: 24px;
+  transition: all 250ms linear 0s;
+  font-size: 2.3rem;
+}
+
+header nav ul li .menu-item:hover {
+  color: #1b5e19;
+}
+
+header nav ul li .menu-item-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#register {
+  max-width: 730px;
+}
+#form {
+  margin: 0;
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form form {
+  width: 90%;
+  max-width: 730px;
+  padding: 40px;
+  background-color: #e9f1e9;
+  border-radius: 5px;
+}
+
+#form form h1 {
+  font-size: 3.6rem;
+}
+
+#form form fieldset {
+  margin-top: 50px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#form form fieldset ~ fieldset {
+  margin-top: 20px;
+}
+
+#form form legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+#form form legend h2 {
+  font-size: 2.4rem;
+}
+
+#form form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+}
+
+#form form input {
+  display: block;
+}
+
+#form form .input {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0 15px;
+  line-height: 3.3rem;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #e6e5e5;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#form form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  flex: 1;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 3.3rem;
+}
+
+#form form input::placeholder {
+  color: #a0a0b2;
+}
+
+#form form input[type="date"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#form form .form-group {
+  flex: 1;
+  display: flex;
+}
+
+#form form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#form form .form-group .field + .field {
+  margin-left: 24px;
+}
+
+#form form .form-group input + input,
+#form form .form-group select + select {
+  margin-left: 24px;
+}
+
+#form form .button {
+  border: none;
+  background-color: #1b5e19;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.8rem;
+
+  font-weight: 500;
+  height: 37px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  transition: background-color 250ms ease 0s;
+}
+
+#form form .button:hover {
+  background-color: rgba(27, 94, 25, 0.6);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 676px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-container img {
+    order: -1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #bf360c;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.5s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 24px;
+    top: 25px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul li a {
+    transition-duration: 0.5s;
+    line-height: 4rem;
+    display: block;
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+#form form .button-group {
+  flex: 1;
+  display: flex;
+  margin: 30px 0;
+}
+
+#form form .btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#form form .button-group .btn + .btn {
+  margin-left: 24px;
+}
+
+#form form .btn a {
+  text-decoration: none;
+  color: #1b5e19;
+  border: 2px solid #1b5e19;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-weight: 500;
+  transition: all 250ms linear 0;
+}
+
+#form form .btn a:hover {
+  background-color: #1b5e19;
+  color: white;
+}
+
+#form form .btn a .btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
